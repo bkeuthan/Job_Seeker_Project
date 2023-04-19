@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AAA Gas Prices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 11]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.14.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-71573383-1"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.14.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-71573383-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = monsterinsights_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+															__gtagTracker('config', 'UA-71573383-1', {"forceSSL":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/gasprices.aaa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<!-- gasprices.aaa.com is managing ads with Advanced Ads 1.42.0 --><script id="gaspr-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://gasprices.aaa.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://gasprices.aaa.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='premium_html5-map-style-css' href='https://gasprices.aaa.com/wp-content/plugins/premiumhtmlmap/static/css/map.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts.googleapis-css' href='https://fonts.googleapis.com/css?family=Oswald%3A400%2C700%2C300&#038;ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery.formstyler-css' href='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/css/jquery.formstyler.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/css/font-awesome.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize.min-css' href='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/css/normalize.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='chartist.min-css' href='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/css/chartist.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/css/style.css?ver=1.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.js?ver=8.14.0' id='monsterinsights-frontend-script-js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/gasprices.aaa.com","hash_tracking":"false","ua":"UA-71573383-1","v4_id":""};/* ]]> */
+</script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/premiumhtmlmap/static/js/jquery.nicescroll.js?ver=6.1.1' id='premium_html5-map-nicescroll-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1.4.7' id='stop-user-enumeration-js'></script>
+<script type='text/javascript' id='advanced-ads-advanced-js-js-extra'>
+/* <![CDATA[ */
+var advads_options = {"blog_id":"1","privacy":{"enabled":false,"state":"not_needed"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js?ver=1.42.0' id='advanced-ads-advanced-js-js'></script>
+<link rel="https://api.w.org/" href="https://gasprices.aaa.com/wp-json/" /><link rel="alternate" type="application/json" href="https://gasprices.aaa.com/wp-json/wp/v2/pages/2569" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gasprices.aaa.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://gasprices.aaa.com/wp-includes/wlwmanifest.xml" />
+<link rel="canonical" href="https://gasprices.aaa.com/state-gas-price-averages/" />
+<link rel='shortlink' href='https://gasprices.aaa.com/?p=2569' />
+<link rel="alternate" type="application/json+oembed" href="https://gasprices.aaa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgasprices.aaa.com%2Fstate-gas-price-averages%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://gasprices.aaa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgasprices.aaa.com%2Fstate-gas-price-averages%2F&#038;format=xml" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-71573383-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KB4L0RX86R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KB4L0RX86R');
+</script>
+<script type="text/javascript">
+		var advadsCfpQueue = [];
+		var advadsCfpAd = function( adID ){
+			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
+		};
+		</script>
+				<style type="text/css" id="wp-custom-css">
+			.jq-selectbox__dropdown {
+	bottom: initial !important;
+	overflow-y: auto !important;
+	height: 300px !important;
+}
+
+.jq-selectbox ul {
+	height: 100%;
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .ad-toptrends {
+    display:inline-block;
+		float:right;
+		margin-top:-30px;
+		margin-bottom:30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .ad-toptrends {
+    display:none;
+  }
+}
+
+.sidebar #block-2 {
+	margin-bottom:0px;
+}
+
+@media only screen and (min-width:1024px) {
+	.home .map-history {
+	background-image:url(https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/images/logo.svg);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	margin-bottom:80px;
+}
+}
+
+@media only screen and (max-width:1023px) {
+	.home .map-history:after {
+content:url(https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/images/logo.svg);
+		float:right;
+		padding-right:60px;
+}
+}
+		</style>
+		
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+	
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/307753755/AAA_GasPrices', [300, 250], 'div-gpt-ad-1522245446493-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script src="https://www.aaa.com/configuration/sem/LoggingCommon.js?pt=AAAGASPRICES"></script>
+</head>
+<body class="page-template page-template-templates page-template-template-sortable_table page-template-templatestemplate-sortable_table-php page page-id-2569 do-etfw aa-prefix-gaspr-">
+<iframe width="0" height="0" name="Trade Desk Tracking - AAA - Retargeting" frameborder="0" scrolling="no" src="//insight.adsrvr.org/tags/eac6kka/lmk1kee/iframe"></iframe><!--ebiz-->
+    <header>
+        <a class="skip-link sr-only sr-only-focusable" href="#maincontent">Skip to content</a>
+        <div class="container">
+            <div class="upper-header">
+                <div class="title">
+                    <a class="logo" href="https://gasprices.aaa.com" title="AAA Gas Prices Logo"><img src="https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/images/logo.svg" alt="AAA Gas Prices Logo" aria-hidden="true"><span class="logo-text" aria-hidden="true">Gas Prices</span></a>
+                </div>
+                <div class="header-nav-soc">
+
+                    <div class="top-nav"><ul id="menu-top-menu" class="menu"><li id="menu-item-4446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4446"><a href="https://gasprices.aaa.com/subscribe/">Subscribe</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://gasprices.aaa.com/about-aaa/">About AAA</a></li>
+<li id="menu-item-205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-205"><a href="http://aaa.com/join">Join AAA</a></li>
+<li id="menu-item-206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-206"><a href="http://aaa.com">Visit AAA</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://gasprices.aaa.com/contact-aaa/">Contact Us</a></li>
+</ul></div>
+                    <div class="soc-nav">
+                        <ul role="list">
+                                                        <li role="listitem" class="face-b">
+                                <a href="https://www.facebook.com/AAAFanPage/" target="_blank" aria-label="Facebook"></a>
+                            </li>
+                                                                                    <li role="listitem" class="twitter">
+                                <a href="https://twitter.com/aaanews" target="_blank" aria-label="Twitter"></a>
+                            </li>
+                                                                                    <li role="listitem" class="you-tub">
+                                <a href="https://www.youtube.com/user/AAA" target="_blank" aria-label="YouTube"></a>
+                            </li>
+                                                                                                                <li role="listitem" class="pinterest">
+                                <a href="https://www.pinterest.com/aaa/" target="_blank" aria-label="Pinterest"></a>
+                            </li>
+                                                                                    <li role="listitem" class="e-mail">
+                                <a href="mailto:PublicAffairs@national.aaa.com" aria-label="Email"></a>
+                            </li>
+                                                        <li role="listitem" class="print">
+                                <a href="javascript:void(0)" aria-label="Print"></a>
+                            </li>
+                        </ul>
+                        <a href="https://www.essentialaccessibility.com/aaa-national-office?utm_source=aaanationalofficehomepage&utm_medium=iconlarge&utm_term=eachannelpage&utm_content=header&utm_campaign=aaanationaloffice" target="_blank" class="accblity"><img src="https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/images/eA_Icon.svg" alt="Click this icon to learn more about our commitment to customers and employees with disabilities."></a>
+                    </div>
+                </div>
+                <span class="mobile-menu-button"><i class="fa fa-bars"></i></span>
+                <span class="mobile-search-button"><i class="fa fa-search"></i></span>
+                <a href="https://www.essentialaccessibility.com/aaa-national-office?utm_source=aaanationalofficehomepage&utm_medium=iconlarge&utm_term=eachannelpage&utm_content=header&utm_campaign=aaanationaloffice" target="_blank" class="mobile-accblity"><img src="https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/images/eA_Icon.svg" alt="Click this icon to learn more about our commitment to customers and employees with disabilities."></a>
+            </div>
+        </div>
+        <div class="lower-header-nav">
+            <div class="container">
+
+                <ul id="menu-blue-banner-menu" class="desk"><li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-44"><a href="https://gasprices.aaa.com/">Gas Prices</a>
+<ul class="sub-menu">
+	<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2569 current_page_item menu-item-2570 active"><a href="https://gasprices.aaa.com/state-gas-price-averages/">State Gas Price Averages</a></li>
+</ul>
+</li>
+<li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="https://gasprices.aaa.com/aaa-gas-cost-calculator/">Gas Cost Calculator</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="https://gasprices.aaa.com/news/">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-2921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2921"><a href="https://gasprices.aaa.com/news/fuel-saving-tips/">Fuel Saving Tips</a></li>
+	<li id="menu-item-2547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2547"><a href="https://gasprices.aaa.com/fuel-quality/">Fuel Quality</a></li>
+	<li id="menu-item-2543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2543"><a href="https://gasprices.aaa.com/premium-fuel-research/">Premium Fuel Research</a></li>
+</ul>
+</li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://gasprices.aaa.com/top-trends/">Top Trends</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://gasprices.aaa.com/contact-aaa/">Contact AAA</a></li>
+</ul>
+                <ul id="menu-blue-banner-menu-1" class="mobile-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-44"><a href="https://gasprices.aaa.com/">Gas Prices</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2569 current_page_item menu-item-2570 active"><a href="https://gasprices.aaa.com/state-gas-price-averages/">State Gas Price Averages</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="https://gasprices.aaa.com/aaa-gas-cost-calculator/">Gas Cost Calculator</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="https://gasprices.aaa.com/news/">News</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2921"><a href="https://gasprices.aaa.com/news/fuel-saving-tips/">Fuel Saving Tips</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2547"><a href="https://gasprices.aaa.com/fuel-quality/">Fuel Quality</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2543"><a href="https://gasprices.aaa.com/premium-fuel-research/">Premium Fuel Research</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://gasprices.aaa.com/top-trends/">Top Trends</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://gasprices.aaa.com/contact-aaa/">Contact AAA</a></li>
+</ul>
+                <div class="mobil-search">
+                    <form action="https://gasprices.aaa.com" method="get">
+                        <div class="serach-inp">
+                            <input type="search" name="s" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <form action="https://gasprices.aaa.com" class="deck" method="get">
+                    <div class="serach-inp">
+                        <input type="search" name="s" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mobi-average-price mobi-average-price--red">
+    <p class="price-text price-text--red">
+      Today’s AAA National Average $3.645              <i class="fa fa-caret-up" aria-hidden="true"></i>
+          </p>
+    <p>Price as of 4/13/23</p>
+</div>
+
+        <div class="map-box">
+            <div class="container">
+                <div class="map-badges">
+                    <div class="average-price"><p>Today’s AAA<br />
+National Average </p>
+    <p class="numb">
+      $3.645              <i class="fa fa-caret-up" aria-hidden="true"></i>
+          </p>
+    <span>Price as of<br />4/13/23</span>
+</div>
+<br />
+                </div>
+                                <div class="map">
+            <div class="">
+                <!-- Map Generated CSS --> 
+ <style>
+.iwm_map_canvas { overflow:hidden; }#map_canvas_1 path { stroke:#383838; }#map_canvas_1 path[fill^="#f5f5f5"] { stroke-width:-5; }#map_canvas_1 path[fill^="#f5f5f5"]:hover { stroke-width:-5; }#map_canvas_1 path[fill^="none"] { display:none; }#map_canvas_1 { background-repeat:no-repeat; background-size: 100% 100%; }</style><div class='iwm_map_canvas'><div id='map_canvas_1' class='i_world_map ' class='iwm_map_canvas'><div class='iwm_placeholder'><img width='32px' src='https://gasprices.aaa.com/wp-content/plugins/interactive-world-maps/imgs/placeholder.png'><br>USA Map</div></div></div>            </div>
+        </div>
+        <div class="map-history">
+            <div class="title-history">National Retail Prices</div>
+                                    <div class="map-history-in">
+                        <span class="color-history" style="background: #ca3338;"></span><span class="info-history">4.892 to 3.722</span>
+                    </div>
+                                    <div class="map-history-in">
+                        <span class="color-history" style="background: #dd7a7a;"></span><span class="info-history">3.721 to 3.559</span>
+                    </div>
+                                    <div class="map-history-in">
+                        <span class="color-history" style="background: #ffffff;"></span><span class="info-history">3.558 to 3.472</span>
+                    </div>
+                                    <div class="map-history-in">
+                        <span class="color-history" style="background: #01b5da;"></span><span class="info-history">3.471 to 3.358</span>
+                    </div>
+                                    <div class="map-history-in">
+                        <span class="color-history" style="background: #004f92;"></span><span class="info-history">3.357 to 3.156</span>
+                    </div>
+                                                                          </div>
+                    <div class="small-states">
+                <ul>
+                                            <li>
+                            <a aria-label="View details for Vermont" href="https://gasprices.aaa.com?state=VT" style="background: #ffffff;">
+                                <span>VT</span>
+                                <div class="hover-box">
+                                    <p class="state">Vermont</p>
+                                    <p>$3.472</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for New Jersey" href="https://gasprices.aaa.com?state=NJ" style="background: #01b5da;">
+                                <span>NJ</span>
+                                <div class="hover-box">
+                                    <p class="state">New Jersey</p>
+                                    <p>$3.430</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Delaware" href="https://gasprices.aaa.com?state=DE" style="background: #ffffff;">
+                                <span>DE</span>
+                                <div class="hover-box">
+                                    <p class="state">Delaware</p>
+                                    <p>$3.553</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for District of Columbia" href="https://gasprices.aaa.com?state=DC" style="background: #dd7a7a;">
+                                <span>DC</span>
+                                <div class="hover-box">
+                                    <p class="state">District of Columbia</p>
+                                    <p>$3.718</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Rhode Island" href="https://gasprices.aaa.com?state=RI" style="background: #01b5da;">
+                                <span>RI</span>
+                                <div class="hover-box">
+                                    <p class="state">Rhode Island</p>
+                                    <p>$3.392</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Connecticut" href="https://gasprices.aaa.com?state=CT" style="background: #ffffff;">
+                                <span>CT</span>
+                                <div class="hover-box">
+                                    <p class="state">Connecticut</p>
+                                    <p>$3.477</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for New Hampshire" href="https://gasprices.aaa.com?state=NH" style="background: #004f92;">
+                                <span>NH</span>
+                                <div class="hover-box">
+                                    <p class="state">New Hampshire</p>
+                                    <p>$3.330</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Massachusetts" href="https://gasprices.aaa.com?state=MA" style="background: #01b5da;">
+                                <span>MA</span>
+                                <div class="hover-box">
+                                    <p class="state">Massachusetts</p>
+                                    <p>$3.374</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Maryland" href="https://gasprices.aaa.com?state=MD" style="background: #dd7a7a;">
+                                <span>MD</span>
+                                <div class="hover-box">
+                                    <p class="state">Maryland</p>
+                                    <p>$3.597</p>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a aria-label="View details for Hawaii" href="https://gasprices.aaa.com?state=HI" style="background: #ca3338;">
+                                <span>HI</span>
+                                <div class="hover-box">
+                                    <p class="state">Hawaii</p>
+                                    <p>$4.786</p>
+                                </div>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                            </div>
+        </div>
+        <div class="container mob-cont top-ten-cont">
+
+                <div class="most-recent">
+        <div class="mr-new">
+            <p>news:</p>
+        </div>
+        <div class="news-box">
+            <p>
+                <a href="https://gasprices.aaa.com/pump-prices-edge-higher-for-now/">Pump Prices Edge Higher For Now</a>
+                <a class="more" href="https://gasprices.aaa.com/news/">Read more &#187;</a>
+            </p>
+        </div>
+    </div>
+
+            <div class="row">
+                <h1 class="sortable-title">
+                    State Gas Price Averages<a href="javascript:return false;" class="info tooltip" title="State gas price averages are updated daily to reflect change in price by gas grade."></a>
+                </h1>
+                <div class="sortable-mobile" hidden>
+                    <select id="mob-types">
+                        <option data-type="regular">Fuel Type - Regular</option>
+                        <option data-type="mid_grade">Fuel Type - Mid-Grade</option>
+                        <option data-type="premium">Fuel Type - Premium</option>
+                        <option data-type="diesel">Fuel Type - Diesel</option>
+                    </select>
+                </div>
+            </div>
+            <table id="sortable" class="sortable-table">
+                <thead>
+                    <tr>
+                        <th tabindex="0">State <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                        <th tabindex="0" class="regular" style="display: table-cell;">Regular <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                        <th tabindex="0" class="mid_grade">Mid-Grade <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                        <th tabindex="0" class="premium">Premium <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                        <th tabindex="0" class="diesel">Diesel <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=AK">
+                                Alaska                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.863                            </td>
+                            <td class="mid_grade">$4.003                            </td>
+                            <td class="premium">$4.195                            </td>
+                            <td class="diesel">$4.323                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=AL">
+                                Alabama                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.290                            </td>
+                            <td class="mid_grade">$3.663                            </td>
+                            <td class="premium">$4.032                            </td>
+                            <td class="diesel">$4.004                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=AR">
+                                Arkansas                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.208                            </td>
+                            <td class="mid_grade">$3.571                            </td>
+                            <td class="premium">$3.932                            </td>
+                            <td class="diesel">$3.879                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=AZ">
+                                Arizona                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.527                            </td>
+                            <td class="mid_grade">$4.790                            </td>
+                            <td class="premium">$5.086                            </td>
+                            <td class="diesel">$4.586                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=CA">
+                                California                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.892                            </td>
+                            <td class="mid_grade">$5.102                            </td>
+                            <td class="premium">$5.252                            </td>
+                            <td class="diesel">$5.337                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=CO">
+                                Colorado                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.556                            </td>
+                            <td class="mid_grade">$3.896                            </td>
+                            <td class="premium">$4.185                            </td>
+                            <td class="diesel">$4.149                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=CT">
+                                Connecticut                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.477                            </td>
+                            <td class="mid_grade">$3.938                            </td>
+                            <td class="premium">$4.326                            </td>
+                            <td class="diesel">$4.477                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=DC">
+                                District of Columbia                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.718                            </td>
+                            <td class="mid_grade">$4.263                            </td>
+                            <td class="premium">$4.653                            </td>
+                            <td class="diesel">$4.537                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=DE">
+                                Delaware                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.553                            </td>
+                            <td class="mid_grade">$3.968                            </td>
+                            <td class="premium">$4.225                            </td>
+                            <td class="diesel">$4.077                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=FL">
+                                Florida                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.571                            </td>
+                            <td class="mid_grade">$3.954                            </td>
+                            <td class="premium">$4.269                            </td>
+                            <td class="diesel">$4.116                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=GA">
+                                Georgia                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.392                            </td>
+                            <td class="mid_grade">$3.773                            </td>
+                            <td class="premium">$4.143                            </td>
+                            <td class="diesel">$4.140                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=HI">
+                                Hawaii                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.786                            </td>
+                            <td class="mid_grade">$4.996                            </td>
+                            <td class="premium">$5.260                            </td>
+                            <td class="diesel">$5.919                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=IA">
+                                Iowa                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.518                            </td>
+                            <td class="mid_grade">$3.723                            </td>
+                            <td class="premium">$4.230                            </td>
+                            <td class="diesel">$3.918                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=ID">
+                                Idaho                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.559                            </td>
+                            <td class="mid_grade">$3.780                            </td>
+                            <td class="premium">$4.017                            </td>
+                            <td class="diesel">$4.112                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=IL">
+                                Illinois                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.060                            </td>
+                            <td class="mid_grade">$4.516                            </td>
+                            <td class="premium">$4.932                            </td>
+                            <td class="diesel">$4.203                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=IN">
+                                Indiana                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.722                            </td>
+                            <td class="mid_grade">$4.138                            </td>
+                            <td class="premium">$4.577                            </td>
+                            <td class="diesel">$4.287                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=KS">
+                                Kansas                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.303                            </td>
+                            <td class="mid_grade">$3.599                            </td>
+                            <td class="premium">$3.892                            </td>
+                            <td class="diesel">$3.832                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=KY">
+                                Kentucky                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.444                            </td>
+                            <td class="mid_grade">$3.855                            </td>
+                            <td class="premium">$4.233                            </td>
+                            <td class="diesel">$4.052                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=LA">
+                                Louisiana                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.291                            </td>
+                            <td class="mid_grade">$3.654                            </td>
+                            <td class="premium">$4.006                            </td>
+                            <td class="diesel">$3.923                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MA">
+                                Massachusetts                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.374                            </td>
+                            <td class="mid_grade">$3.902                            </td>
+                            <td class="premium">$4.239                            </td>
+                            <td class="diesel">$4.563                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MD">
+                                Maryland                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.597                            </td>
+                            <td class="mid_grade">$4.060                            </td>
+                            <td class="premium">$4.330                            </td>
+                            <td class="diesel">$4.157                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=ME">
+                                Maine                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.457                            </td>
+                            <td class="mid_grade">$3.836                            </td>
+                            <td class="premium">$4.217                            </td>
+                            <td class="diesel">$4.880                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MI">
+                                Michigan                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.636                            </td>
+                            <td class="mid_grade">$4.075                            </td>
+                            <td class="premium">$4.535                            </td>
+                            <td class="diesel">$4.255                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MN">
+                                Minnesota                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.536                            </td>
+                            <td class="mid_grade">$3.786                            </td>
+                            <td class="premium">$4.203                            </td>
+                            <td class="diesel">$4.036                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MO">
+                                Missouri                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.306                            </td>
+                            <td class="mid_grade">$3.586                            </td>
+                            <td class="premium">$3.895                            </td>
+                            <td class="diesel">$3.800                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MS">
+                                Mississippi                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.156                            </td>
+                            <td class="mid_grade">$3.512                            </td>
+                            <td class="premium">$3.857                            </td>
+                            <td class="diesel">$3.887                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=MT">
+                                Montana                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.357                            </td>
+                            <td class="mid_grade">$3.630                            </td>
+                            <td class="premium">$3.891                            </td>
+                            <td class="diesel">$4.023                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NC">
+                                North Carolina                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.470                            </td>
+                            <td class="mid_grade">$3.829                            </td>
+                            <td class="premium">$4.183                            </td>
+                            <td class="diesel">$4.060                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=ND">
+                                North Dakota                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.449                            </td>
+                            <td class="mid_grade">$3.712                            </td>
+                            <td class="premium">$4.033                            </td>
+                            <td class="diesel">$3.993                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NE">
+                                Nebraska                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.506                            </td>
+                            <td class="mid_grade">$3.647                            </td>
+                            <td class="premium">$4.104                            </td>
+                            <td class="diesel">$3.876                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NH">
+                                New Hampshire                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.330                            </td>
+                            <td class="mid_grade">$3.761                            </td>
+                            <td class="premium">$4.139                            </td>
+                            <td class="diesel">$4.564                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NJ">
+                                New Jersey                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.430                            </td>
+                            <td class="mid_grade">$3.924                            </td>
+                            <td class="premium">$4.185                            </td>
+                            <td class="diesel">$4.054                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NM">
+                                New Mexico                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.606                            </td>
+                            <td class="mid_grade">$3.924                            </td>
+                            <td class="premium">$4.208                            </td>
+                            <td class="diesel">$4.269                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NV">
+                                Nevada                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.250                            </td>
+                            <td class="mid_grade">$4.503                            </td>
+                            <td class="premium">$4.737                            </td>
+                            <td class="diesel">$4.483                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=NY">
+                                New York                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.584                            </td>
+                            <td class="mid_grade">$4.008                            </td>
+                            <td class="premium">$4.372                            </td>
+                            <td class="diesel">$4.842                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=OH">
+                                Ohio                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.639                            </td>
+                            <td class="mid_grade">$4.080                            </td>
+                            <td class="premium">$4.504                            </td>
+                            <td class="diesel">$4.207                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=OK">
+                                Oklahoma                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.314                            </td>
+                            <td class="mid_grade">$3.630                            </td>
+                            <td class="premium">$3.884                            </td>
+                            <td class="diesel">$3.735                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=OR">
+                                Oregon                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.010                            </td>
+                            <td class="mid_grade">$4.203                            </td>
+                            <td class="premium">$4.406                            </td>
+                            <td class="diesel">$4.607                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=PA">
+                                Pennsylvania                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.742                            </td>
+                            <td class="mid_grade">$4.109                            </td>
+                            <td class="premium">$4.411                            </td>
+                            <td class="diesel">$4.666                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=RI">
+                                Rhode Island                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.392                            </td>
+                            <td class="mid_grade">$3.966                            </td>
+                            <td class="premium">$4.285                            </td>
+                            <td class="diesel">$4.566                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=SC">
+                                South Carolina                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.358                            </td>
+                            <td class="mid_grade">$3.738                            </td>
+                            <td class="premium">$4.089                            </td>
+                            <td class="diesel">$3.953                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=SD">
+                                South Dakota                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.503                            </td>
+                            <td class="mid_grade">$3.646                            </td>
+                            <td class="premium">$4.068                            </td>
+                            <td class="diesel">$3.914                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=TN">
+                                Tennessee                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.349                            </td>
+                            <td class="mid_grade">$3.732                            </td>
+                            <td class="premium">$4.074                            </td>
+                            <td class="diesel">$3.952                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=TX">
+                                Texas                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.324                            </td>
+                            <td class="mid_grade">$3.688                            </td>
+                            <td class="premium">$4.014                            </td>
+                            <td class="diesel">$3.728                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=UT">
+                                Utah                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.657                            </td>
+                            <td class="mid_grade">$3.877                            </td>
+                            <td class="premium">$4.064                            </td>
+                            <td class="diesel">$4.008                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=VA">
+                                Virginia                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.506                            </td>
+                            <td class="mid_grade">$3.889                            </td>
+                            <td class="premium">$4.219                            </td>
+                            <td class="diesel">$4.101                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=VT">
+                                Vermont                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.472                            </td>
+                            <td class="mid_grade">$3.900                            </td>
+                            <td class="premium">$4.353                            </td>
+                            <td class="diesel">$4.379                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=WA">
+                                Washington                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$4.437                            </td>
+                            <td class="mid_grade">$4.644                            </td>
+                            <td class="premium">$4.846                            </td>
+                            <td class="diesel">$4.997                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=WI">
+                                Wisconsin                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.534                            </td>
+                            <td class="mid_grade">$3.914                            </td>
+                            <td class="premium">$4.369                            </td>
+                            <td class="diesel">$3.877                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=WV">
+                                West Virginia                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.572                            </td>
+                            <td class="mid_grade">$3.895                            </td>
+                            <td class="premium">$4.205                            </td>
+                            <td class="diesel">$4.283                            </td>
+                        </tr>
+                                            <tr>
+                            <td>
+                              <a href="https://gasprices.aaa.com?state=WY">
+                                Wyoming                              </a>
+                            </td>
+                            <td class="regular" style="display: table-cell;">$3.396                            </td>
+                            <td class="mid_grade">$3.617                            </td>
+                            <td class="premium">$3.896                            </td>
+                            <td class="diesel">$4.234                            </td>
+                        </tr>
+                                    </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- main-END -->
+    <footer>
+        <div class="container">
+        <div class="footer-box">
+            <div class="copy">
+                <p>© 2023 AAA Gas Prices • All Rights Reserved                </p>
+            </div>
+            
+            <ul id="menu-footer-menu" class="menu"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://gasprices.aaa.com/contact-aaa/">Contact</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://gasprices.aaa.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-4447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4447"><a href="https://gasprices.aaa.com/subscribe/">Subscribe</a></li>
+</ul>            
+        </div>
+        </div>
+    </footer>
+    <link rel='stylesheet' id='imapresponsivecss-css' href='https://gasprices.aaa.com/wp-content/plugins/interactive-world-maps/includes/responsive.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='iwm_front_css-css' href='https://gasprices.aaa.com/wp-content/plugins/interactive-world-maps/styles.css?ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' id='advanced-ads-pro/front-js-extra'>
+/* <![CDATA[ */
+var advadsCfpInfo = {"cfpExpHours":"3","cfpClickLimit":"3","cfpBan":"7","cfpPath":"","cfpDomain":"gasprices.aaa.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/advanced-ads-pro/assets/js/advanced-ads-pro.min.js?ver=2.21.2' id='advanced-ads-pro/front-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0' id='do-etfw-twitter-widgets-js'></script>
+<script type='text/javascript' src='https://www.google.com/jsapi?ver=6.1.1' id='jsapifull-js'></script>
+<script type='text/javascript' id='iwmjs-js-extra'>
+/* <![CDATA[ */
+var iwmparam = [{"apiversion":"1","usehtml":"1","id":"1","bgcolor":"transparent","stroke":"0","bordercolor":"#CCCCCC","incolor":"#F5F5F5","actcolor":"#438094","width":"","height":"","aspratio":"1","interactive":"true","tooltip":"focus","region":"US","resolution":"provinces","markersize":"10","displaymode":"regions","placestxt":"","action":"i_map_action_open_url","custom_action":"","projection":"mercator"}];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/interactive-world-maps/includes/shortcode.js?ver=6.1.1' id='iwmjs-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/plugins/interactive-world-maps/includes/responsive.js?ver=6.1.1' id='imapresponsive-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/jquery.formstyler.js?ver=6.1.1' id='jquery.formstyler-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/jquery-ui.js?ver=6.1.1' id='jquery-ui-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/jquery.tooltipster.js?ver=6.1.1' id='jquery.tooltipster-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/easing.js?ver=6.1.1' id='easing-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/jquery.ui.totop.js?ver=6.1.1' id='jquery.ui.totop-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/chartist.min.js?ver=6.1.1' id='chartist.min-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/jquery.tablesorter.combined.min.js?ver=6.1.1' id='tablesorter-js'></script>
+<script type='text/javascript' src='https://gasprices.aaa.com/wp-content/themes/aaa-gasprices/js/main.js?ver=6.1.1' id='main-js'></script>
+<script>window.advads_admin_bar_items = [];</script><script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+    <script>
+        (function(){
+            if(
+                    typeof iwmparam !== 'undefined' 
+                    && 
+                    ['US', 'US-US'].indexOf(iwmparam[0].region) > -1
+            ){
+                iwmparam[0].placestxt = "CA,California,$4.892,https://gasprices.aaa.com?state=CA,#ca3338;HI,Hawaii,$4.786,https://gasprices.aaa.com?state=HI,#ca3338;AZ,Arizona,$4.527,https://gasprices.aaa.com?state=AZ,#ca3338;WA,Washington,$4.437,https://gasprices.aaa.com?state=WA,#ca3338;NV,Nevada,$4.250,https://gasprices.aaa.com?state=NV,#ca3338;IL,Illinois,$4.060,https://gasprices.aaa.com?state=IL,#ca3338;OR,Oregon,$4.010,https://gasprices.aaa.com?state=OR,#ca3338;AK,Alaska,$3.863,https://gasprices.aaa.com?state=AK,#ca3338;PA,Pennsylvania,$3.742,https://gasprices.aaa.com?state=PA,#ca3338;IN,Indiana,$3.722,https://gasprices.aaa.com?state=IN,#ca3338;DC,District of Columbia,$3.718,https://gasprices.aaa.com?state=DC,#dd7a7a;UT,Utah,$3.657,https://gasprices.aaa.com?state=UT,#dd7a7a;OH,Ohio,$3.639,https://gasprices.aaa.com?state=OH,#dd7a7a;MI,Michigan,$3.636,https://gasprices.aaa.com?state=MI,#dd7a7a;NM,New Mexico,$3.606,https://gasprices.aaa.com?state=NM,#dd7a7a;MD,Maryland,$3.597,https://gasprices.aaa.com?state=MD,#dd7a7a;NY,New York,$3.584,https://gasprices.aaa.com?state=NY,#dd7a7a;WV,West Virginia,$3.572,https://gasprices.aaa.com?state=WV,#dd7a7a;FL,Florida,$3.571,https://gasprices.aaa.com?state=FL,#dd7a7a;ID,Idaho,$3.559,https://gasprices.aaa.com?state=ID,#dd7a7a;CO,Colorado,$3.556,https://gasprices.aaa.com?state=CO,#ffffff;DE,Delaware,$3.553,https://gasprices.aaa.com?state=DE,#ffffff;MN,Minnesota,$3.536,https://gasprices.aaa.com?state=MN,#ffffff;WI,Wisconsin,$3.534,https://gasprices.aaa.com?state=WI,#ffffff;IA,Iowa,$3.518,https://gasprices.aaa.com?state=IA,#ffffff;VA,Virginia,$3.506,https://gasprices.aaa.com?state=VA,#ffffff;NE,Nebraska,$3.506,https://gasprices.aaa.com?state=NE,#ffffff;SD,South Dakota,$3.503,https://gasprices.aaa.com?state=SD,#ffffff;CT,Connecticut,$3.477,https://gasprices.aaa.com?state=CT,#ffffff;VT,Vermont,$3.472,https://gasprices.aaa.com?state=VT,#ffffff;NC,North Carolina,$3.470,https://gasprices.aaa.com?state=NC,#01b5da;ME,Maine,$3.457,https://gasprices.aaa.com?state=ME,#01b5da;ND,North Dakota,$3.449,https://gasprices.aaa.com?state=ND,#01b5da;KY,Kentucky,$3.444,https://gasprices.aaa.com?state=KY,#01b5da;NJ,New Jersey,$3.430,https://gasprices.aaa.com?state=NJ,#01b5da;WY,Wyoming,$3.396,https://gasprices.aaa.com?state=WY,#01b5da;RI,Rhode Island,$3.392,https://gasprices.aaa.com?state=RI,#01b5da;GA,Georgia,$3.392,https://gasprices.aaa.com?state=GA,#01b5da;MA,Massachusetts,$3.374,https://gasprices.aaa.com?state=MA,#01b5da;SC,South Carolina,$3.358,https://gasprices.aaa.com?state=SC,#01b5da;MT,Montana,$3.357,https://gasprices.aaa.com?state=MT,#004f92;TN,Tennessee,$3.349,https://gasprices.aaa.com?state=TN,#004f92;NH,New Hampshire,$3.330,https://gasprices.aaa.com?state=NH,#004f92;TX,Texas,$3.324,https://gasprices.aaa.com?state=TX,#004f92;OK,Oklahoma,$3.314,https://gasprices.aaa.com?state=OK,#004f92;MO,Missouri,$3.306,https://gasprices.aaa.com?state=MO,#004f92;KS,Kansas,$3.303,https://gasprices.aaa.com?state=KS,#004f92;LA,Louisiana,$3.291,https://gasprices.aaa.com?state=LA,#004f92;AL,Alabama,$3.290,https://gasprices.aaa.com?state=AL,#004f92;AR,Arkansas,$3.208,https://gasprices.aaa.com?state=AR,#004f92;MS,Mississippi,$3.156,https://gasprices.aaa.com?state=MS,#004f92;";
+                iwmDrawVisualization();
+            }   
+        })();
+    </script>
+</body>
+
+</html>
