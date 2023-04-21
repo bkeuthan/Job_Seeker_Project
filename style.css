@@ -1,0 +1,49 @@
+/* Remove the default margin and padding from the body. */
+body {
+  padding: 20;
+  margin: 0;
+}
+
+/* Set map, body, and html to 100% of the screen size. */
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.ranking {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 9999;
+}
+
+#output {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 9999;
+}
+
+.job-search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 9999;
+}
+
+#chartDiv {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
