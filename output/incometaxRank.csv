@@ -1,31 +1,31 @@
 state,AvgIncomeTax,IncomeTaxRank
-Alaska,0.00%,1.0
-South Dakota,0.00%,1.0
-Florida,0.00%,1.0
-Nevada,0.00%,1.0
-Texas,0.00%,1.0
 Wyoming,0.00%,1.0
-Tennessee,0.00%,1.0
+Nevada,0.00%,1.0
 South Carolina,0.00%,1.0
+South Dakota,0.00%,1.0
+Tennessee,0.00%,1.0
+Florida,0.00%,1.0
+Alaska,0.00%,1.0
+Texas,0.00%,1.0
 North Dakota,2.00%,9.0
-Oklahoma,2.50%,10.0
 Arizona,2.50%,10.0
+Oklahoma,2.50%,10.0
 Louisiana,3.05%,12.0
 Pennsylvania,3.07%,13.0
 Indiana,3.15%,14.0
-Ohio,3.38%,15.0
 Georgia,3.38%,15.0
+Ohio,3.38%,15.0
 Arkansas,3.45%,17.0
 Missouri,3.48%,18.0
 Alabama,3.50%,19.0
 New Mexico,3.80%,20.0
-Virginia,3.88%,21.0
 Maryland,3.88%,21.0
+Virginia,3.88%,21.0
 Montana,3.88%,21.0
 New Hampshire,4.00%,24.0
 Michigan,4.25%,25.0
-Delaware,4.40%,26.0
 Colorado,4.40%,26.0
+Delaware,4.40%,26.0
 Kansas,4.40%,26.0
 Kentucky,4.50%,29.0
 Nebraska,4.55%,30.0
@@ -47,6 +47,5 @@ Washington,7.00%,45.0
 Massachusetts,7.00%,45.0
 California,7.15%,47.0
 Oregon,7.33%,48.0
-District of Columbia,7.38%,49.0
-New York,7.45%,50.0
-Minnesota,7.60%,51.0
+New York,7.45%,49.0
+Minnesota,7.60%,50.0

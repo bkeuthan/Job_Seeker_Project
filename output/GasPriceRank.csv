@@ -12,8 +12,8 @@ Tennessee,3.3489999999999998,10.0
 Montana,3.3569999999999998,11.0
 South Carolina,3.358,12.0
 Massachusetts,3.3739999999999997,13.0
-Rhode Island,3.392,14.0
 Georgia,3.392,14.0
+Rhode Island,3.392,14.0
 Wyoming,3.3960000000000004,16.0
 New Jersey,3.43,17.0
 Kentucky,3.444,18.0
@@ -39,14 +39,13 @@ New Mexico,3.6060000000000003,37.0
 Michigan,3.636,38.0
 Ohio,3.639,39.0
 Utah,3.657,40.0
-District of Columbia,3.718,41.0
-Indiana,3.722,42.0
-Pennsylvania,3.742,43.0
-Alaska,3.863,44.0
-Oregon,4.01,45.0
-Illinois,4.06,46.0
-Nevada,4.25,47.0
-Washington,4.437,48.0
-Arizona,4.527,49.0
-Hawaii,4.7860000000000005,50.0
-California,4.8919999999999995,51.0
+Indiana,3.722,41.0
+Pennsylvania,3.742,42.0
+Alaska,3.863,43.0
+Oregon,4.01,44.0
+Illinois,4.06,45.0
+Nevada,4.25,46.0
+Washington,4.437,47.0
+Arizona,4.527,48.0
+Hawaii,4.7860000000000005,49.0
+California,4.8919999999999995,50.0
