@@ -13,10 +13,10 @@ Having the available career and job opportunities that not only meet the financi
 When considering a big city or suburban area will be different for everyone. Public transportation and infrastructure can also be a major obstacle in relocation. In different areas may or may not require the need for a personal vehicle to get around with the availability of streamlined public transportation. But is something to consider for the greatest level of convenience and efficiency. -
 
 As job seekers looking for the BEST possible place to live in proximity to some of the best real estate and quality of life, climate has a huge impact on decision making and an important factor to explore. 
-The data collected from typical weather patterns in the past 5 years (2018-2022) has shown an the average temperature for each state. When considering these climate conditions, job seekers would want to keep in mind of weather preferences along with the common factors mentioned in this project, when comparing each state. -
+The data collected from typical weather patterns in the past 5 years (2018-2022) has shown an the average temperature for each state. When considering these climate conditions, job seekers would want to keep in mind of weather preferences along with the common factors mentioned in this project, when comparing each state..
 
 Even the data used has shown a difference in average per state to get an idea of the typical weather patterns and make sure that job seekers are okay with the climate conditions before deciding to move. The probability of weather would have an influence decision making for job seekers.
 
 #### Top 5 coldest states (Alaska, North Dakota, Minnesota, Montana, Wyoming) vs Top 5 warmest states (Hawaii, Florida, Louisiana, Texas, Georgia)
 
-Using resources with considerable amount of data can help job seekers make a decision on jobs and relocation. -
+Using resources with considerable amount of data can help job seekers make a decision on jobs and relocation..
