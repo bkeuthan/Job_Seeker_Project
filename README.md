@@ -6,11 +6,11 @@ As job seekers consider making a change and the possibility of moving to new sta
 
 We also have acknowledged other exploratory factors to consider that can also make an impact on decision making for a job seeker to relocate:
 #### Politics - Transportation - Culture - Weather - Career opportunities - Infrastructure
-Special emphasis on politics and culture of a community, can help influence the decision for job seekers to relocate. The level of diversity with respect to race, religion, sexuality, socioeconomic issues and ethnic culture can all relate to the community’s culture. 
+Special emphasis on politics and culture of a community, can help influence the decision for job seekers to relocate. With respect to the level of diversity with race, religion, sexuality, political views, socioeconomic issues and ethnic culture can all relate to the community’s culture. 
 
-Having the available career and job opportunities that not only meet the financial needs, support, and fulfillment in the work that would be done. The importance of using job search sites, such as indeed, linkedIn, glassdoor, etc. contribute in showing the employment opportunities that are available to job seekers in the state that they are considering moving to.
+Having the availability of career and job opportunities that not only meet the financial needs, support, and fulfillment in the work that would be done. The importance of using job search sites, such as indeed, linkedIn, monster, ziprecruiter etc. contribute in showing the employment opportunities that are available to job seekers in the state that they are considering moving to.
 
-When considering a big city or suburban area will be different for everyone. Public transportation and infrastructure can also be a major obstacle in relocation. In different areas may or may not require the need for a personal vehicle to get around with the availability of streamlined public transportation. But is something to consider for the greatest level of convenience and efficiency. -
+When considering a big city or suburban area will be different for everyone, public transportation and infrastructure can also be a major obstacle in relocation. In different areas may or may not require the need for a personal vehicle to get around with the availability of streamlined public transportation. But is something to consider for the greatest level of convenience and efficiency. -
 
 As job seekers looking for the BEST possible place to live in proximity to some of the best real estate and quality of life, climate has a huge impact on decision making and an important factor to explore. 
 The data collected from typical weather patterns in the past 5 years (2018-2022) has shown an the average temperature for each state. When considering these climate conditions, job seekers would want to keep in mind of weather preferences along with the common factors mentioned in this project, when comparing each state..
