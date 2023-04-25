@@ -1,6 +1,6 @@
 # Job_Seeker_Project
 
-As job seekers consider making a change and moving to new state, a variety of factors can determine where to make to best move. We emphasized that compatibility of the most important factors when choosing a place to live have different levels of importance to job seekers. In our project we’ve focused on the top factors that can impact these decisions such as Income, Education, Crime, Cost of Living, and Quality of Life as well as Location.
+As job seekers consider making a change and the possibility of moving to new state, a variety of factors can determine where to make to best move. We emphasized that compatibility of the most important factors when choosing a place to live have different levels of importance to job seekers. In our project we’ve focused on the top factors that can impact these decisions such as Income, Education, Crime, Cost of Living, and Quality of Life as well as Location.
 
 ## Exploratory areas to consider that can impact the decision for job seekers to relocate. 
 
